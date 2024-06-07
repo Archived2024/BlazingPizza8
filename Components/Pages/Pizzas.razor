@@ -1,0 +1,18 @@
+﻿@page "/pizzas"
+
+@using BlazingPizza8.Data
+@using BlazingPizza8.Model
+
+@inject PizzaService PizzaSVC
+
+
+<h3>Pizzas</h3>
+
+@code {
+    OurPizza[] pizzas;
+
+    protected override async Task OnInitializedAsync()
+    {
+        pizzas =  PizzaSVC.GetPizza();
+    }
+}

@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
+//Vår egen pizzaservice
 builder.Services.AddSingleton<PizzaService>();
 
 var app = builder.Build();
