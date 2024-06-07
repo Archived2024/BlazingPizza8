@@ -1,6 +1,6 @@
 ﻿namespace BlazingPizza8.Model
 {
-    public class OurPIzza
+    public class OurPizza
     {
         public int PizzaId { get; set; }
         public string Name { get; set; }
